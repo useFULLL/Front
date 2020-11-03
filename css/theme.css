@@ -347,6 +347,10 @@ section {
     margin-bottom: 30px;
 }
 
+.login-logo-red{
+    color:red;
+}
+
 .login-checkbox {
     display: -webkit-box;
     display: -webkit-flex;
