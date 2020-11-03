@@ -347,6 +347,10 @@ section {
     margin-bottom: 30px;
 }
 
+.login-logo-red{
+    color:red;
+}
+
 .login-checkbox {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1228,11 +1232,16 @@ section {
     top: 51px;
 }
 
-@media (max-width: 991px) {
-    .logo {
-        text-align: center;
-    }
+.logo {
+    max-width:991px;
+    background : #4272d7;
+    color: #fff;
+    position : center;
+    font-size: 40px;
+    font-style: bold;
+    
 }
+
 
 .header-wrap {
     display: -webkit-box;
@@ -4476,6 +4485,13 @@ section {
     border-bottom: none;
 }
 
+.table-top-campaign.table button {
+    border-top: none;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    padding: 12px 6px;
+}
+
 @media (min-width: 1200px) {
     .table-responsive-data2 {
         overflow: visible;
@@ -4856,8 +4872,8 @@ section {
 }
 
 .au-breadcrumb2 {
-    padding-top: 48px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 1px;
 }
 
 .au-breadcrumb2 .au-breadcrumb-span {
@@ -4964,12 +4980,18 @@ section {
     padding-top: 57px;
 }
 
+.statistic__wrapper{
+    position: relative;
+    width:1100px;
+    margin:0, auto;
+}
+
 .statistic__item {
     border: 1px solid #e5e5e5;
     background: #fff;
     padding: 20px 30px;
     position: relative;
-    min-height: 180px;
+    min-height: 150px;
     overflow: hidden;
     margin-bottom: 40px;
 }
@@ -6068,6 +6090,10 @@ section {
 
 .p-t-10 {
     padding-top: 10px;
+}
+
+.p-t-5 {
+    padding-top: 5px;
 }
 
 .p-r-10 {

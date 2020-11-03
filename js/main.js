@@ -792,11 +792,11 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+          labels: ["제 5회", "제 6회", "제 7회", "제 8회", "제 9회", "제 10회"],
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            data: [0, 7, 3, 5, 2, 10, 7],
+            data: [3350, 2600, 4200, 6430, 6800, 9730],
             label: "Expense",
             backgroundColor: 'rgba(0,103,255,.15)',
             borderColor: 'rgba(0,103,255,0.5)',
@@ -853,7 +853,7 @@
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Value',
+                labelString: '수익(만원)',
                 fontFamily: "Poppins"
               },
               ticks: {
