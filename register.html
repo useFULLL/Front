@@ -42,7 +42,10 @@
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
-                            NEVERMISS
+                            <h1 class ="login-logo-dark-green">
+                                NEVERMISS
+                            </h1>
+                            <div class = "login-logo-green" id ="admin_user">USER</div>
                             <!-- <a href="#">
                                 <img src="images/icon/logo.png" alt="CoolAdmin">
                             </a> -->
@@ -63,16 +66,16 @@
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
-                                        <input type="checkbox" name="aggree">Agree the terms and policy
+                                        <input type="checkbox" name="admin" id = "admin" value ="user" onclick="handleClick();">Are You Admin?
                                     </label>
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">register</button>
-                                <div class="social-login-content">
+                                <!-- <div class="social-login-content">
                                     <div class="social-button">
                                         <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
                                         <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
                                     </div>
-                                </div>
+                                </div> -->
                             </form>
                             <div class="register-link">
                                 <p>
@@ -116,3 +119,29 @@
 
 </html>
 <!-- end document-->
+
+<script>
+    var Admin = document.getElementsById("admin");
+    var AdminCheck = Admin.getAttribute("checked");
+
+    function submit(){
+        document.forms["loginform"].submit();
+    }
+
+    var check =false;
+
+    function handleClick(){
+        if(check==false){
+            document.getElementById("admin").setAttribute('value','user');
+            check = true;
+            document.getElementById('admin_user').innerHTML='USER';
+        }
+        else{
+            document.getElementById("admin").setAttribute('value','admin')
+            check = false;
+            document.getElementById('admin_user').innerHTML='ADMIN';
+
+        } 
+    }
+
+</script>
