@@ -347,6 +347,13 @@ section {
     margin-bottom: 30px;
 }
 
+.login-logo-green{
+    color: green;
+}
+.login-logo-dark-green{
+    color: rgb(19, 75, 19);
+}
+
 .login-checkbox {
     display: -webkit-box;
     display: -webkit-flex;

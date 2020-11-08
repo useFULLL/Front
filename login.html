@@ -42,13 +42,16 @@
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
-                            NEVERMISS
+                            <h1 class ="login-logo-dark-green">
+                                NEVERMISS
+                            </h1>
+                            <div class = "login-logo-green" id ="admin_user">USER</div>
                             <!-- <a href="#">
                                 <img src="images/icon/logo.png" alt="CoolAdmin">
                             </a> -->
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            <form action="index.html" method="post" name = loginform target="_blank">
                                 <div class="form-group">
                                     <label>Email Address</label>
                                     <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
@@ -59,18 +62,19 @@
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember">Remember Me
+                                        <input type="checkbox" name="admin" id = "admin" value ="user" onclick="handleClick();">Are You Admin?
                                     </label>
                                     <label>
-                                        <a href="#">Forgotten Password?</a>
+                                        <a href="forget-pass.html">Forgotten Password?</a>
                                     </label>
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
+
                             </form>
                             <div class="register-link">
                                 <p>
                                     Don't you have account?
-                                    <a href="#">Sign Up Here</a>
+                                    <a href="register.html">Sign Up Here</a>
                                 </p>
                             </div>
                         </div>
@@ -109,3 +113,29 @@
 
 </html>
 <!-- end document-->
+
+<script>
+    var Admin = document.getElementsById("admin");
+    var AdminCheck = Admin.getAttribute("checked");
+
+    function submit(){
+        document.forms["loginform"].submit();
+    }
+
+    var check =false;
+
+    function handleClick(){
+        if(check==false){
+            document.getElementById("admin").setAttribute('value','user');
+            check = true;
+            document.getElementById('admin_user').innerHTML='USER';
+        }
+        else{
+            document.getElementById("admin").setAttribute('value','admin')
+            check = false;
+            document.getElementById('admin_user').innerHTML='ADMIN';
+
+        } 
+    }
+
+</script>
